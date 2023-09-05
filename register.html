@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <h2 align="center">Form Registrasi</h2>
+    <form action="proses_registrasi.php" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" required><br><br>
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
+        <label for="laki_laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+        <label for="perempuan">Perempuan</label><br><br>
+
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" required></textarea><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="no_hp">Nomor HP:</label>
+        <input type="tel" id="no_hp" name="no_hp" required><br><br>
+
+        <label for="kota">Kota Pilihan:</label>
+        <select id="kota" name="kota" required>
+            <option value="Blitar">Blitar</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Kediri">Bogor</option>
+            <option value="Tulungagung">Tulungagung</option>
+            <option value="Malang">Cilacap</option>
+            <option value="Madiun">Madiun</option>
+            <option value="Nganjuk">Nganjuk</option>
+        </select><br></br>
+        <input type="checkbox" id="remember" name="remember" value="1">
+        <label for="remember">Saya Menyetujui Peraturan Yang Ada</label><br><br>
+
+        <input type="submit" value="Simpan">
+        <input type="submit" value="Batal">
+
+        <p>Belum punya akun? <a href="Login.html">Login</a></p>
+
+    </form>
+</body>
+</html>
